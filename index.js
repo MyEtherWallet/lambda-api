@@ -15,7 +15,7 @@ const prettyPrint = require('./lib/prettyPrint') // Pretty print for debugging
 const { ConfigurationError } = require('./lib/errors') // Require custom errors
 
 // Create the API class
-class API {
+export default class LambdaAPI {
 
   // Create the constructor function.
   constructor(props) {
@@ -240,6 +240,8 @@ class API {
       await this.catchErrors(e,response)
     }
 
+    await this._finally(request, response)
+
     // Return the final response
     return response._response
 
@@ -307,7 +309,7 @@ class API {
     response._state = 'done'
 
     // Execute finally
-    await this._finally(response._request,response)
+    // await this._finally(response._request,response)
 
     // Output logs
     response._request._logs.forEach(log => {
@@ -487,4 +489,4 @@ class API {
 } // end API class
 
 // Export the API class as a new instance
-module.exports = opts => new API(opts)
+// module.exports = opts => new API(opts)

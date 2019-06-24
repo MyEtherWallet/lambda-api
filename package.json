@@ -1,7 +1,7 @@
 {
   "name": "lambda-api",
   "version": "0.10.1",
-  "description": "Lightweight web framework for your serverless applications",
+  "description": "(EDITED) Lightweight web framework for your serverless applications",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
