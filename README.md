@@ -1,3 +1,9 @@
+# NOTE: This is an edited version of the lambda-api module
+
+The original can be found here: [https://github.com/jeremydaly/lambda-api#readme](https://github.com/jeremydaly/lambda-api#readme)
+
+This edit modifies the behavior of the finally() function, and exports the CLASS rather than an instance of the class.
+
 [![Lambda API](https://www.jeremydaly.com/wp-content/uploads/2018/03/lambda-api-logo.svg)](https://serverless-api.com/)
 
 [![Build Status](https://travis-ci.org/jeremydaly/lambda-api.svg?branch=master)](https://travis-ci.org/jeremydaly/lambda-api)

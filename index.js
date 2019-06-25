@@ -15,7 +15,7 @@ const prettyPrint = require('./lib/prettyPrint') // Pretty print for debugging
 const { ConfigurationError } = require('./lib/errors') // Require custom errors
 
 // Create the API class
-export default class LambdaAPI {
+module.exports = class LambdaAPI {
 
   // Create the constructor function.
   constructor(props) {
