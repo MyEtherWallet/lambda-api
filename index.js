@@ -240,6 +240,9 @@ module.exports = class LambdaAPI {
       await this.catchErrors(e,response)
     }
 
+    
+
+    // Added: await for finally //
     await this._finally(request, response)
 
     // Return the final response
